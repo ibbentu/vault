@@ -1,0 +1,34 @@
+# submodule 등록
+git submodule add https://github.com/ibbentu/test_submodule android/test_submodule
+
+# subtree 등록
+git subtree add --prefix=windows/test_subtree https://github.com/ibbentu/test_subtree main --squash
+
+===
+squash = 커밋히스토리를 하나의 커밋으로 압축
+subtree 동작 시 상위 repo에는 Squashed, Merge 커밋 2개가 생성됨
++ 등록 시 commit message를 입력했음
+===
+
+#########################################################
+### subtree 데이터 변경
+[상위repo에서 데이터 변경]
+상위repo에서 우선 commit 후 push 해주어야함.
+
+# 상위repo에서의 변경 사항을 하위repo에 반영
+git subtree push --prefix=windows/test_subtree https://github.com/ibbentu/test_subtree main
+
+[하위repo에서 데이터 변경]
+하위repo에서 commit 후 push
+
+# 상위repo에서 하위repo의 변경 사항을 가져옴
+git subtree pull --prefix=windows/test_subtree https://github.com/ibbentu/test_subtree main --squash -m "Auto subtree update"
+상위repo에서 git push 필요
+#########################################################
+
+
+
+
+
+
+
