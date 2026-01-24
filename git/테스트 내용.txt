@@ -26,7 +26,12 @@ git subtree pull --prefix=windows/test_subtree https://github.com/ibbentu/test_s
 상위repo에서 git push 필요
 #########################################################
 
+원격 저장소에 올라가버린 커밋과 데이터 삭제
+git reset --hard HEAD~1
+git push origin main --force
 
+스테이징 해제
+git reset HEAD
 
 
 
