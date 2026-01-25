@@ -35,7 +35,7 @@ def main():
         
         time.sleep(0.5)
 
-    time.sleep(3.5)
+    time.sleep(3)
 
 
 if __name__ == "__main__":
