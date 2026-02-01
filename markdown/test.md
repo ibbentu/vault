@@ -83,7 +83,7 @@ ___
 - 체크박스가 vscode에서는 미리보기로 지원되지 않는다
 
 각주[^1].
-[^1]: 각주 내용
+[^1]: 각주 내용 
 
 <img src="https://avatars.githubusercontent.com/u/240755087?v=4" alt="설명" width="105" height="105">
 
